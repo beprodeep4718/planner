@@ -9,7 +9,8 @@ const features = [
   'Unlimited consultations & support',
   'Monthly goal tracking & reviews',
   'Access to exclusive financial tools',
-  'Educational resources & webinars',
+  'Financial education for beginners',
+  'Build a corpus worth crores with proper financial planning.'
 ];
 
 export default function Pricing() {

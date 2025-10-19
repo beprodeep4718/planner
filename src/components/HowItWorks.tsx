@@ -3,8 +3,8 @@ import { UserPlus, MessageSquare, TrendingUp, Trophy } from 'lucide-react';
 const steps = [
   {
     icon: UserPlus,
-    title: 'Sign Up',
-    description: 'Create your account and complete a quick financial assessment to understand your current situation.',
+    title: 'Subscribe',
+    description: 'Subscribe with a yearly nominal fees for better health of your wealth. we will take care of your wealth building.',
     step: '01'
   },
   {

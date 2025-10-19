@@ -15,7 +15,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Empowering every Indian to achieve financial freedom through smart planning, education, and personalized mentorship.
+              We don’t suggest any particular mutual fund or stock. Instead, we help you understand your options so you can make confident, well-informed investment choices.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">

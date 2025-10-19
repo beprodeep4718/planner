@@ -10,7 +10,6 @@ const features = [
   'Monthly goal tracking & reviews',
   'Access to exclusive financial tools',
   'Educational resources & webinars',
-  'Community of like-minded savers'
 ];
 
 export default function Pricing() {
@@ -44,7 +43,7 @@ export default function Pricing() {
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">Annual Membership</h3>
                   <div className="flex items-center justify-center space-x-3 mb-2">
                     <span className="text-2xl text-gray-500 line-through">₹3,999</span>
-                    <span className="text-6xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">₹1,499</span>
+                    <span className="text-6xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">₹1,499<span className='text-2xl'>/ year</span></span>
                   </div>
                   <p className="text-emerald-600 font-semibold text-xl mb-4">Save ₹2,500 - Limited Time Offer!</p>
                   <p className="text-gray-600">Just ₹125/month - Less than a movie ticket!</p>

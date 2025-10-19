@@ -2,39 +2,39 @@ import { TrendingUp, BookOpen, Users, Target, ShieldCheck, Calendar } from 'luci
 
 const features = [
   {
-    icon: TrendingUp,
-    title: 'Investment Education',
-    description: 'Learn investment options from scratch. No prerequisites needed—we teach everything you need to build wealth.',
-    gradient: 'from-emerald-500 to-teal-600'
-  },
-  {
     icon: Calendar,
     title: 'Monthly Salary Planning',
     description: 'Smart budgeting strategies to help you allocate your income effectively and build consistent savings habits.',
     gradient: 'from-teal-500 to-cyan-600'
   },
   {
+    icon: TrendingUp,
+    title: 'Credit Card Management',
+    description: 'If your entire salary vanishes into credit card payments every month, we’ll guide you in optimizing your expenses and managing your credit card smartly—so your salary finally stays with you.',
+    gradient: 'from-emerald-500 to-teal-600'
+  },
+  {
     icon: ShieldCheck,
-    title: 'Loan Repayment Strategy',
-    description: 'Tackle high-interest loans efficiently. We help you plan repayments so debt does not burden your financial freedom.',
+    title: 'Loan Trap',
+    description: 'Are EMIs taking away your peace of mind? We’ll help you get out of debt strategically and create a realistic repayment plan that lets you breathe easy again.',
     gradient: 'from-cyan-500 to-blue-600'
   },
   {
     icon: Target,
     title: 'Big Purchase Planning',
-    description: 'Planning a wedding, car, or home? We help you save and plan smartly—without taking expensive loans.',
+    description: 'Buying a house, planning a wedding, or a new car shouldn’t mean drowning in high-interest loans. We’ll help you plan these milestones well in advance, the smart way.',
     gradient: 'from-blue-500 to-indigo-600'
   },
   {
     icon: Users,
-    title: 'Personal Mentor',
-    description: 'Get assigned a dedicated mentor who guides you throughout the year, keeping you consistent and motivated.',
+    title: 'Retirement Planning',
+    description: 'We all want to stop working one day and still live comfortably. We’ll help you create a solid retirement plan that ensures a stress-free life later on.',
     gradient: 'from-emerald-500 to-green-600'
   },
   {
     icon: BookOpen,
-    title: 'Year-Round Support',
-    description: 'Stay on track with continuous guidance, resources, and accountability to achieve your financial goals.',
+    title: 'Education',
+    description: 'No financial background? No problem. We’ll explain everything—from the basics of saving to advanced investment strategies—so you can take confident financial decisions.',
     gradient: 'from-green-500 to-teal-600'
   }
 ];

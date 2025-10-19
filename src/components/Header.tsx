@@ -1,11 +1,22 @@
 import { Menu, X, TrendingUp } from 'lucide-react';
+import { useState } from 'react';
+import CallbackModal from './CallbackModal';
 
 interface HeaderProps {
   isMenuOpen: boolean;
   setIsMenuOpen: (value: boolean) => void;
+  onOpenModal?: () => void;
 }
 
-export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
+export default function Header({ isMenuOpen, setIsMenuOpen, onOpenModal }: HeaderProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false); // keep local menu modal state for legacy
+
+  const openModal = () => {
+    if (onOpenModal) return onOpenModal();
+    setIsModalOpen(true);
+  };
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,12 +43,12 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
             <a href="#pricing" className="text-gray-700 hover:text-emerald-600 transition-colors font-medium">
               Pricing
             </a>
-            <a
-              href="#pricing"
+            <button
+              onClick={openModal}
               className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all"
             >
-              Get Started
-            </a>
+              Request a Call Back
+            </button>
           </nav>
 
           <button
@@ -64,15 +75,17 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
             <a href="#pricing" className="block text-gray-700 hover:text-emerald-600 transition-colors font-medium">
               Pricing
             </a>
-            <a
-              href="#pricing"
+            <button
+              onClick={openModal}
               className="block text-center bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-6 py-2 rounded-full font-semibold"
             >
               Get Started
-            </a>
+            </button>
           </nav>
         </div>
       )}
+
+      <CallbackModal isOpen={isModalOpen} onClose={closeModal} />
     </header>
   );
 }

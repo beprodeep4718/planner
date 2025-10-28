@@ -62,7 +62,7 @@ export default function Pricing() {
                 </div>
 
                 <button className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-5 rounded-2xl font-bold text-xl hover:shadow-xl hover:scale-105 transition-all">
-                  Get Started Now - ₹1,499/year
+                  subscribe - ₹1,499/year
                 </button>
 
                 <div className="mt-8 pt-8 border-t border-gray-200">

@@ -58,64 +58,49 @@ export default function Hero() {
 
           <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-              Why This Changes Everything
+              Why planning is important
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center space-y-4">
                 <div className="inline-flex p-4 bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl">
                   <div className="text-5xl">💰</div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">
+                <h3 className="text-2xl text-gray-900">
                   Avoid Costly Mistakes
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                {/* <p className="text-gray-600 leading-relaxed">
                   One wrong financial decision can cost you lakhs. Our guidance
                   prevents expensive errors and helps you avoid debt traps.
-                </p>
+                </p> */}
               </div>
               <div className="text-center space-y-4">
                 <div className="inline-flex p-4 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl">
                   <div className="text-5xl">📈</div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">
+                <h3 className="text-2xl text-gray-900">
                   Build Real Wealth
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                {/* <p className="text-gray-600 leading-relaxed">
                   Learn to invest smartly and watch your money grow month after
                   month, year after year. Compound interest works in your favor.
-                </p>
+                </p> */}
               </div>
               <div className="text-center space-y-4">
                 <div className="inline-flex p-4 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl">
                   <div className="text-5xl">🎯</div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">
+                <h3 className="text-2xl text-gray-900">
                   Achieve Your Dreams
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                {/* <p className="text-gray-600 leading-relaxed">
                   Marriage, car, home, retirement - plan for everything without
                   drowning in debt. Smart planning makes dreams affordable.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
 
           <div className="text-center space-y-6">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#pricing"
-                className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all"
-              >
-                <span>Start Your Journey</span>
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="#how-it-works"
-                className="inline-flex items-center justify-center space-x-2 bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold text-lg border-2 border-emerald-500 hover:bg-emerald-50 transition-all"
-              >
-                <span>Learn More</span>
-              </a>
-            </div>
             
             <div className="text-center space-y-4">
 
@@ -127,17 +112,14 @@ export default function Hero() {
                   Monthly check‑ins • Personalized roadmaps • Measurable results
                 </span>
               </h2>
-
-              <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                Our comprehensive support lasts an entire year, ensuring you stay on track with your financial goals. From monthly check-ins to personalized advice, we’re with you every step of the way.
-              </p>
+              
 
               <div className="flex justify-center mt-3">
                 <a
                   href="#pricing"
                   className="inline-flex items-center gap-2 bg-emerald-500 text-white px-5 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-transform"
                 >
-                  Get Started
+                  Subscribe
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>

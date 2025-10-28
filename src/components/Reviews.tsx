@@ -110,21 +110,6 @@ export default function Reviews() {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-12 text-center text-white">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Success Story Starts Here
-          </h3>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Over 10,000 Indians have already transformed their finances. Join them today and build the future you deserve.
-          </p>
-          <a
-            href="#pricing"
-            className="inline-block bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all"
-          >
-            Start Your Transformation - ₹1,499/year
-          </a>
-        </div>
       </div>
     </section>
   );

@@ -2,16 +2,22 @@ import { TrendingUp, BookOpen, Users, Target, ShieldCheck, Calendar } from 'luci
 
 const features = [
   {
-    icon: Calendar,
-    title: 'Monthly Salary Planning',
-    description: 'Smart budgeting strategies to help you allocate your income effectively and build consistent savings habits.',
-    gradient: 'from-teal-500 to-cyan-600'
+    icon: BookOpen,
+    title: 'UPI Management',
+    description: 'Master smart UPI management to track, control, and optimize your daily expenses effortlessly. Learn simple habits to save more while spending wisely through UPI.',
+    gradient: 'from-green-500 to-teal-600'
   },
   {
     icon: TrendingUp,
     title: 'Credit Card Management',
     description: 'If your entire salary vanishes into credit card payments every month, we’ll guide you in optimizing your expenses and managing your credit card smartly—so your salary finally stays with you.',
     gradient: 'from-emerald-500 to-teal-600'
+  },
+  {
+    icon: Calendar,
+    title: 'Monthly Salary Planning',
+    description: 'Smart budgeting strategies to help you allocate your income effectively and build consistent savings habits.',
+    gradient: 'from-teal-500 to-cyan-600'
   },
   {
     icon: ShieldCheck,
@@ -30,12 +36,6 @@ const features = [
     title: 'Retirement Planning',
     description: 'We all want to stop working one day and still live comfortably. We’ll help you create a solid retirement plan that ensures a stress-free life later on.',
     gradient: 'from-emerald-500 to-green-600'
-  },
-  {
-    icon: BookOpen,
-    title: 'Education',
-    description: 'No financial background? No problem. We’ll explain everything—from the basics of saving to advanced investment strategies—so you can take confident financial decisions.',
-    gradient: 'from-green-500 to-teal-600'
   }
 ];
 

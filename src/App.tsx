@@ -3,11 +3,12 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
 import Pricing from './components/Pricing';
-import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import CallbackModal from './components/CallbackModal';
 import { useState } from 'react';
+import ReferralProgram from './components/ReferralProgram';
+import IdealStudent from './components/IdealStudent';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,8 @@ function App() {
       <Hero />
       <Features />
       <HowItWorks />
-      <Reviews />
+      <IdealStudent />
+      <ReferralProgram />
       <Pricing />
       <Footer />
       <CallbackModal isOpen={isModalOpen} onClose={closeModal} />

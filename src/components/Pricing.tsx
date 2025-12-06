@@ -28,10 +28,13 @@ export default function CTA() {
           <div className="text-center mb-10">
             <div className="inline-flex items-baseline gap-2 mb-4">
               <span className="text-5xl font-bold text-gray-900">₹1,499</span>
-              <span className="text-xl text-gray-500 line-through">₹19,999</span>
+              <span className="text-xl text-gray-500 line-through">₹5,999</span>
             </div>
             <p className="text-emerald-600 font-semibold text-lg">
               Limited Time Offer - 50% Off
+            </p>
+            <p className="text-emerald-600 font-semibold text-lg">
+              125/ month - half of your monthly mobile bill
             </p>
           </div>
 
@@ -58,7 +61,7 @@ export default function CTA() {
 
         <div className="mt-16 text-center">
           <p className="text-emerald-50 text-lg">
-            Have questions? Call us at <span className="font-semibold">+91 XXXXX-XXXXX</span> or email <span className="font-semibold">hello@yourcompany.com</span>
+            Have questions? email <span className="font-semibold">hello@yourcompany.com</span>
           </p>
         </div>
       </div>

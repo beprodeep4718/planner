@@ -21,9 +21,9 @@ function App() {
     <div className="min-h-screen bg-white">
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} onOpenModal={openModal} />
       <Hero />
+      <IdealStudent />
       <Features />
       <HowItWorks />
-      <IdealStudent />
       <ReferralProgram />
       <Pricing />
       <Footer />

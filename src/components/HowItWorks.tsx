@@ -18,7 +18,7 @@ const steps = [
   },
   {
     icon: Video,
-    title: 'Google Meet Consultation',
+    title: 'Video Consultation',
     description: 'Get a personalized financial plan crafted specifically for your situation.',
   },
   {

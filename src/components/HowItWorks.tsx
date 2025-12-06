@@ -1,75 +1,107 @@
-import { UserPlus, MessageSquare, TrendingUp, Trophy } from 'lucide-react';
+import { CreditCard, Phone, FileText, Video, MessageCircle, Trophy } from 'lucide-react';
 
 const steps = [
   {
-    icon: UserPlus,
-    title: 'Subscribe',
-    description: 'Subscribe with a yearly nominal fees for better health of your wealth. we will take care of your wealth building.',
-    step: '01'
+    icon: CreditCard,
+    title: 'Make Your Payment',
+    description: 'Invest in your financial future with a simple, secure payment.',
   },
   {
-    icon: MessageSquare,
-    title: 'Meet Your Mentor',
-    description: 'Get matched with a dedicated financial mentor who understands your goals and income level.',
-    step: '02'
+    icon: Phone,
+    title: 'We Call You Back', 
+    description: "Within 24 hours, we'll reach out to schedule your onboarding.",
   },
   {
-    icon: TrendingUp,
-    title: 'Start Planning',
-    description: 'Build your personalized monthly budget, investment plan, and debt repayment strategy together.',
-    step: '03'
+    icon: FileText,
+    title: 'Share Your Financial Story',
+    description: 'Tell us about your income, expenses, goals, and challenges. Everything stays confidential.',
+  },
+  {
+    icon: Video,
+    title: 'Google Meet Consultation',
+    description: 'Get a personalized financial plan crafted specifically for your situation.',
+  },
+  {
+    icon: MessageCircle,
+    title: 'Year-Long Support',
+    description: '10 video meetings + unlimited chat with mentors and CAs whenever you need guidance.',
   },
   {
     icon: Trophy,
-    title: 'Achieve Goals',
-    description: 'Stay consistent with ongoing support, track progress, and celebrate milestones throughout the year.',
-    step: '04'
-  }
+    title: 'Achieve Financial Freedom',
+    description: 'Watch your savings grow, debts disappear, and confidence soar.',
+  },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 bg-gradient-to-br from-gray-50 to-emerald-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="inline-block bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            Simple Process
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            How It Works
+    <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Your Journey to Financial Freedom
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get started in minutes and transform your financial future with our proven four-step process.
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Simple, proven process. Real results in 12 months.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step, index) => {
-            const Icon = step.icon;
-            return (
-              <div key={index} className="relative">
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-20 left-full w-full h-0.5 bg-gradient-to-r from-emerald-300 to-teal-300 -translate-x-1/2 z-0"></div>
-                )}
-                <div className="relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 z-10">
-                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                    {step.step}
+        <div className="relative">
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-emerald-200 via-emerald-300 to-emerald-200 hidden lg:block"></div>
+
+          <div className="space-y-16">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className={`flex flex-col lg:flex-row items-center gap-8 ${
+                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                }`}
+              >
+                <div className="flex-1 lg:text-right lg:pr-12">
+                  {index % 2 === 0 && (
+                    <div className="lg:block hidden">
+                      <StepContent step={step} index={index} />
+                    </div>
+                  )}
+                </div>
+
+                <div className="relative z-10 flex-shrink-0">
+                  <div className="w-20 h-20 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-xl transform hover:scale-110 transition-transform">
+                    <step.icon className="w-10 h-10 text-white" />
                   </div>
-                  <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 mb-6 mt-4">
-                    <Icon className="w-6 h-6 text-emerald-600" />
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center font-bold text-emerald-800 text-sm">
+                    {index + 1}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {step.description}
-                  </p>
+                </div>
+
+                <div className="flex-1 lg:pl-12">
+                  <div className="lg:hidden block">
+                    <StepContent step={step} index={index} />
+                  </div>
+                  {index % 2 !== 0 && (
+                    <div className="lg:block hidden">
+                      <StepContent step={step} index={index} />
+                    </div>
+                  )}
                 </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function StepContent({ step, index }: { step: typeof steps[0]; index: number }) {
+  return (
+    <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+      <h3 className="text-2xl font-bold text-gray-900 mb-3">
+        {step.title}
+      </h3>
+      <p className="text-gray-600 leading-relaxed text-lg">
+        {step.description}
+      </p>
+    </div>
   );
 }

@@ -9,7 +9,7 @@ export default function ReferralProgram() {
             <Gift className="w-12 h-12 text-emerald-600" />
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Turn Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">Network Into Wealth</span>
+            How to <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">Earn Money From Us</span>
           </h2>
           {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Share the wisdom, earn the rewards. Our referral program makes it easy to help friends while boosting your earnings.
@@ -29,7 +29,7 @@ export default function ReferralProgram() {
                   <span className="font-bold text-emerald-600">1</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Share Your Unique Link</p>
+                  <p className="font-semibold text-gray-900">Share Your Referral Code</p>
                   <p className="text-gray-600 text-sm">Send your referral link to friends</p>
                 </div>
               </div>
@@ -58,7 +58,7 @@ export default function ReferralProgram() {
           <div className="bg-gradient-to-br from-emerald-600 to-teal-600 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-white">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
               <Award className="w-6 h-6" />
-              Earn Rewards Faster
+              Earn Unlimited Cash Rewards
             </h3>
             <div className="space-y-6">
               <div className="bg-white/20 rounded-xl p-4 backdrop-blur-sm">
@@ -68,14 +68,14 @@ export default function ReferralProgram() {
               </div>
 
               <div className="bg-white/20 rounded-xl p-4 backdrop-blur-sm border-2 border-white/40">
-                <p className="text-sm font-semibold opacity-90 mb-1">Refer 7 Friends</p>
-                <p className="text-2xl font-bold">Course FREE</p>
+                <p className="text-sm font-semibold opacity-90 mb-1">Refer 8 Friends</p>
+                <p className="text-2xl font-bold">Earn More Than Subscription Fees</p>
                 <p className="text-sm opacity-80 mt-1">Save ₹1,499</p>
               </div>
 
               <div className="text-center pt-4">
                 <p className="text-sm opacity-90">
-                  <span className="font-bold">Total Earnings:</span> ₹1,400 in cashback + Free Course
+                  <span className="font-bold">Total Earnings:</span> Unlimited, Sky is the Limit!
                 </p>
               </div>
             </div>
@@ -112,21 +112,21 @@ export default function ReferralProgram() {
             </div>
             <div className="text-center">
               <div className="bg-gradient-to-br from-emerald-600 to-teal-600 rounded-xl p-4 mb-3">
-                <p className="text-2xl font-bold text-white">7+</p>
+                <p className="text-2xl font-bold text-white">8+</p>
               </div>
-              <p className="text-sm text-gray-600">7 Referrals</p>
+              <p className="text-sm text-gray-600">8 Referrals</p>
               <p className="font-semibold text-emerald-600">FREE COURSE</p>
             </div>
           </div>
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <p className="text-gray-600 mb-6">Ready to start earning? Join thousands of students already making money through referrals.</p>
           <button className="inline-block px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-xl hover:shadow-lg hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105">
             Get Your Referral Link
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

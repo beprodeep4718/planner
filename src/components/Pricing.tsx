@@ -28,7 +28,7 @@ export default function CTA() {
           <div className="text-center mb-10">
             <div className="inline-flex items-baseline gap-2 mb-4">
               <span className="text-5xl font-bold text-gray-900">₹1,499</span>
-              <span className="text-xl text-gray-500 line-through">₹5,999</span>
+              <span className="text-xl text-gray-500 line-through">₹2,999</span>
             </div>
             <p className="text-emerald-600 font-semibold text-lg">
               Limited Time Offer - 50% Off
@@ -53,10 +53,6 @@ export default function CTA() {
             Get Started Now
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-
-          <p className="text-center text-gray-500 text-sm mt-6">
-            Money-back guarantee if you're not satisfied within 30 days
-          </p>
         </div>
 
         <div className="mt-16 text-center">

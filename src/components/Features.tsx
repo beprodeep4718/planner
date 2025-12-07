@@ -51,9 +51,9 @@ export default function WhyChooseUs() {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             What Makes Us Different?
           </h2>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          {/* <p className="text-xl text-gray-600 leading-relaxed">
             We don't just give advice and disappear. We walk alongside you for an entire year, ensuring you build lasting financial habits and achieve real results.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

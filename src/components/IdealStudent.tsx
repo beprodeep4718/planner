@@ -70,10 +70,10 @@ export default function IdealStudent() {
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Dream of Retiring Early?
+                  Looking to save lakhs in tax?
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Tired of the 9-to-5 grind? Discover how to build a strong financial foundation that lets you retire decades before the traditional retirement age.
+                  Our expert CAs guide you throughout the year with smart tax-saving decisions and help you file your ITR so you save more in tax and stress less.
                 </p>
                 <div className="text-sm text-emerald-600 font-semibold flex items-center gap-2">
                   <span className="inline-block w-2 h-2 bg-emerald-600 rounded-full"></span>
@@ -93,10 +93,10 @@ export default function IdealStudent() {
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Want Crores Through Systematic Investment?
+                  Want Crores Through Systematic Investment and dream of retiring early?
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Build generational wealth through proven, systematic investment strategies. Turn your regular income into a wealth-generating machine that works 24/7.
+                  Build generational wealth through proven, systematic investment strategies and retire much earlier than you ever imagined.
                 </p>
                 <div className="text-sm text-violet-600 font-semibold flex items-center gap-2">
                   <span className="inline-block w-2 h-2 bg-violet-600 rounded-full"></span>
@@ -105,19 +105,6 @@ export default function IdealStudent() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-10 text-center">
-          <h3 className="text-2xl font-bold text-white mb-3">
-            Do any of these situations sound familiar?
-          </h3>
-          <p className="text-lg text-emerald-50 mb-6 max-w-2xl mx-auto">
-            Then you're exactly who we built this course for. Join hundreds of students who've already transformed their financial lives.
-          </p>
-          <button className="px-8 py-4 bg-white text-emerald-600 font-semibold rounded-xl hover:bg-emerald-50 transition-colors duration-300 hover:shadow-lg">
-            Start Your Financial Transformation Today
-          </button>
         </div>
       </div>
     </section>

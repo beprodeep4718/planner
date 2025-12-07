@@ -24,7 +24,7 @@ const steps = [
   {
     icon: MessageCircle,
     title: 'Year-Long Support',
-    description: '10 video meetings + unlimited chat with mentors and CAs whenever you need guidance.',
+    description: '10+ video meetings + unlimited chat with mentors and CAs whenever you need guidance.',
   },
   {
     icon: Trophy,
@@ -42,12 +42,12 @@ export default function HowItWorks() {
             Your Journey to Financial Freedom
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Simple, proven process. Real results in 12 months.
+            Simple, proven process. Real results in 6 months.
           </p>
         </div>
 
         <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-emerald-200 via-emerald-300 to-emerald-200 hidden lg:block"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-emerald-200 via-emerald-300 -z-1 to-emerald-200"></div>
 
           <div className="space-y-16">
             {steps.map((step, index) => (
@@ -74,7 +74,7 @@ export default function HowItWorks() {
                   </div>
                 </div>
 
-                <div className="flex-1 lg:pl-12">
+                <div className="flex-1 z-10 lg:pl-12">
                   <div className="lg:hidden block">
                     <StepContent step={step} index={index} />
                   </div>
